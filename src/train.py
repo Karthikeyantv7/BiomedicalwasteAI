@@ -45,8 +45,8 @@ def parse_args():
     parser.add_argument(
         "--batch",
         type=int,
-        default=16,
-        help="Batch size (default: 16; sensible baseline for 6GB-8GB+ VRAM)",
+        default=8,
+        help="Batch size (default: 8; sensible baseline for 6GB-8GB+ VRAM)",
     )
     parser.add_argument(
         "--imgsz",
@@ -65,7 +65,7 @@ def parse_args():
     parser.add_argument(
         "--workers",
         type=int,
-        default=4,
+        default=0,
         help="Number of DataLoader worker threads (default: 4; set to 2 or 0 on Windows if encountering shared memory issues)",
     )
     parser.add_argument(
